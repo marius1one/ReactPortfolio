@@ -1,12 +1,21 @@
 import './index.scss';
 import {Link} from "react-router-dom";
 import AnimatedLetters from "../AnimatedLetters/index.jsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import Logo from "./Logo/index.jsx";
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ['M', 'a', 'r', 'i', 'u', 's'];
     const jobArray = ['J', 'A', 'V', 'A', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     return (
         <div className="container home-page">
             <div className="text-zone">
@@ -16,6 +25,7 @@ const Home = () => {
                 </h1>
                 <Link to="/contact" className="flat-button">Contact me</Link>
             </div>
+            <Logo />
         </div>
     );
 }

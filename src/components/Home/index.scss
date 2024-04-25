@@ -9,7 +9,7 @@
   }
 
   h1 {
-    color: whitesmoke;
+    color: #c0b2b5;
     font-size: 53px;
     margin: 0;
     font-family: 'Coolvetica';
@@ -17,7 +17,7 @@
   }
 
   p {
-    color: #8d8d8d;
+    color: #a10115;
     margin-top: 20px;
     font-weight: 400;
     font-size: 11px;
@@ -27,22 +27,22 @@
   }
 
   .flat-button {
-    color: goldenrod;
+    color: #d72c16;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 10px;
-    border: 1px solid goldenrod;
+    border: 1px solid #d72c16;
     margin-top: 25px;
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
-      background-color: goldenrod;
-      color: #333;
+      background-color: #d72c16;
+      color: #f0efea;
     }
   }
 }
