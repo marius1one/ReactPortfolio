@@ -9,20 +9,25 @@
 }
 
 .logo {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 8px 0;
 
-  img {
+  span {
     display: block;
-    margin: 8px auto;
-    width: 24px;
-    height: auto;
+    font-family: "La Belle Aurore";
+    margin: 0 10px;
+    color: #f0efea;
+    font-size: 35px;
+  }
+  .sub-logo {
+    margin-top: -20px;
+    font-size: 15px;
 
-    &.sub-logo {
-      width: 50px;
-    }
   }
 }
+
 
 nav {
   display: block;
